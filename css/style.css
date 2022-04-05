@@ -117,6 +117,11 @@ p {
     margin-right: 50px;
 }
 
+.link-icon {
+    width: 16px;
+    height: 14px;
+    margin-right: 10px;
+}
 .contacts-link {
     color: var(--main-text-color);
     font-weight: 500;
@@ -138,6 +143,9 @@ p {
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--background-color-hero);
+    background-image: url('../images/hero-back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
