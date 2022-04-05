@@ -114,13 +114,17 @@ p {
     margin-left: auto;
 }
 .contacts .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .link-icon {
     width: 16px;
-    height: 14px;
+    height: 12px;
     margin-right: 10px;
+}
+.phone {
+    width: 10px;
+    height: 16px;
 }
 .contacts-link {
     color: var(--main-text-color);
@@ -186,10 +190,19 @@ p {
     padding-top: 94px;
 }
 
-/* типа "скрыл" логический заголовок */
-.hidden-title {
+/*  логический заголовок */
+
+.visually-hidden {
     position: absolute;
-    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .advantages-list {
@@ -202,6 +215,18 @@ p {
 
 .advantages-list .item:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-logo {
+    background-color: var(--filter-background);
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
 }
 
 .advantages-title {
@@ -265,10 +290,57 @@ p {
     color: var(--title-text-color);
     font-weight: 500;
 }
-
+.team-text {
+    margin-bottom: 16px;
+}
 .team-card {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.team-card-list {
+    display: flex;
+    justify-content: center;
+}
+.ellipse {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* outline: 1px solid black; */
+}
+.ellipse:hover,
+.ellipse:focus {
+    background-color: var(--accent-text-color);
+}
+.team-card-list li:not(:last-child) {
+    margin-right: 10px;
+}
+.team-card-icon {
+    height: 20px;
+    width: 20px;
+}
+/* ----------Clients---- */
+.client-section {
+    padding-top: 73px;
+    padding-bottom: 94px;
+}
+
+.clients {
+    display: flex;
+}
+
+.clients .thumb {
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+}
+.clients li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-client {
+    width: 106px;
+    height: 60px;
 }
 
 /*--------------------> FOOTER--- */
