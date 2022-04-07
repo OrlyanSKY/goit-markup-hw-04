@@ -155,7 +155,12 @@ p {
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--background-color-hero);
-    background-image: url('../images/hero-back.jpg');
+    max-width: 1600px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero-back.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -344,33 +349,34 @@ p {
 
 /* ----------Clients---- */
 
-.client-section {
-    padding-top: 73px;
-    padding-bottom: 94px;
-}
-
 .clients {
     display: flex;
 }
 
-.thumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid #afb1b8;
-}
-.clients li:not(:last-child) {
+.client-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.icon-client {
-    display: inline-block;
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--social-color);
+    color: var(--social-color);
+}
+
+.client-icon {
     width: 106px;
     height: 60px;
+    fill: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 
 /*--------------------> FOOTER--- */
