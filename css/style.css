@@ -132,6 +132,9 @@ p {
 }
 .contacts-link {
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     align-items: center;
     color: var(--main-text-color);
     font-weight: 500;
@@ -187,7 +190,6 @@ p {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
@@ -272,6 +274,10 @@ p {
 .products {
     display: flex;
 }
+.products img {
+    display: block;
+}
+
 .products .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -284,6 +290,9 @@ p {
 .team {
     display: flex;
     text-align: center;
+}
+.team img {
+    display: block;
 }
 .team .item:not(:last-child) {
     margin-right: 30px;
@@ -401,37 +410,36 @@ p {
 }
 /* -------Address links */
 
-.white-link,
-.clear-link {
+.address-list .link {
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
+    color: var(--footer-text-color);
 }
-
-.white-link {
+.link.white {
     color: var(--white-color);
 }
 
-.white-link:hover,
-.white-link:focus {
+.address-list .link:hover,
+.address-list .link:focus {
     color: var(--accent-text-color);
-}
-/* transparent links */
-.clear-link {
-    color: var(--footer-text-color);
-}
-
-.clear-link:hover,
-.clear-link:focus {
-    color: var(--accent-text-color);
-}
-
-.address-list .item {
-    display: block;
 }
 
 .address-list .item:not(:last-child) {
     margin-bottom: 9px;
+}
+/* ------------------JOIN-US---------- */
+
+.join-block {
+    outline: 2px solid white;
+}
+
+.join-title {
+    margin-bottom: 20px;
+
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /* ----------------PAGE 2 PORTFOLIO--------------- */
@@ -482,6 +490,11 @@ p {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
+}
+
+.card-set .item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-set img {
